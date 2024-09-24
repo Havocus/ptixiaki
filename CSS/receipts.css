@@ -1,0 +1,109 @@
+h1{
+    text-align: center;
+    margin: -20px auto 0 auto;
+    padding: 20px 0;   
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+button {
+    padding: 12px 24px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #f3bc77;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;              
+    width: 100vw;   
+    margin: -20px auto 0 auto;
+}
+
+#receipt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.textplace {
+    margin-bottom: 10px; 
+}
+
+.place {
+    margin-bottom: 10px; 
+}
+
+button {
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        padding: 30px 0;
+        letter-spacing: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .formContainer {
+        padding: 20px;
+        width: auto; 
+    }
+
+    #receipt-form {
+        width: 90%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+        padding: 20px 0;
+        letter-spacing: 2px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+
+    .textplace, .place {
+        margin-bottom: 8px; 
+    }
+
+    .formContainer {
+        padding: 10px;
+    }
+
+    #receipt-form {
+        width: 100%; 
+    }
+}

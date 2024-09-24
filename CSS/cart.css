@@ -1,0 +1,276 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #cartContainer {
+    max-width: 53%;
+    width: 53%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-item img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .cart-item-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .cart-item-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .cart-item-price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .remove-button {
+    padding: 7px 11px;
+    border-radius: 25px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remove-button:hover {
+    background-color: #555;
+  }
+
+  
+  .totalPrice {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .totalPrice hr {
+    margin: 10px 0;
+  }
+  
+  .totalPrice p {
+    margin: 0;
+  }
+
+  .btn{
+    padding: 12px 24px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 176px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #f3bc77;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .btn:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+  
+  #totalPrice {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+ 
+  #paypal-button-container {
+ margin-left: 30%;
+ padding-top:3%;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  padding-top: 10px;
+}
+
+#courierService {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#courierService option {
+  padding: 20px;
+}
+
+.purchase-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #259940; 
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.purchase-popup.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); 
+}
+
+
+@media (max-width: 768px) {
+  #cartContainer {
+    max-width: 95%;
+    width: 95%;
+    padding: 25px;
+  }
+  
+  .cart-item img {
+    max-width: 120px;
+  }
+
+  .cart-item-details h3 {
+    font-size: 25px;
+  }
+
+  .cart-item-details p {
+    font-size: 25px;
+  }
+
+  .cart-item-price {
+    font-size: 25px;
+  }
+
+  .remove-button {
+    padding: 9px 13px;
+    font-size: 25px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 25px;
+    padding: 14px 28px;
+  }
+
+  #totalPrice {
+    font-size: 33px;
+  }
+
+  #paypal-button-container {
+    margin-left: 0;
+    padding-top: 2%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    max-width: 140px;
+  }
+
+  .cart-item-details {
+    text-align: left;
+    margin-top: 25px;
+  }
+
+  .cart-item-details h3 {
+    font-size: 25px;
+  }
+
+  .cart-item-details p {
+    font-size: 25px;
+  }
+
+  .cart-item-price {
+    margin-top: 12px;
+    text-align: right;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .remove-button {
+    padding: 11px 15px;
+    font-size: 17px;
+    align-self: flex-end;
+  }
+
+  .btn {
+    font-size: 25px;
+    padding: 16px 32px;
+  }
+
+  #totalPrice {
+    font-size: 33px;
+  }
+}

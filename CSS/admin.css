@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #C4A484;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 30 30px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+}
+
+#imageInput {
+    margin-top: 30px;
+}
+
+#imagePreview {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+#imagePreview.visible {
+    display: block;
+}
+
+.addProduct {
+    padding: 12px 24px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 176px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #f3bc77;
+    cursor: pointer;
+    outline: none;
+}
+
+.addProduct:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: #f3bc77;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 20px 5px 20px 5px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.tags {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tags ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tagButtons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#tagButtons button {
+    padding: 12px 24px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: block;
+    margin: 20px auto 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #f3bc77;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+#tagButtons button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+}
+
+.card {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: content-box;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.product-name,
+.product-price {
+    margin: 5px 0;
+}
+
+.product-price {
+    color: #000000;
+    font-weight: bold;
+}
+
+.product-id {
+    color: #e79838;
+    font-weight: bold;
+}
+
+.stock-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #f3bc77;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.stock-button:hover {
+    background-color: #000000;
+}
+
+.arrow-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    color: #fff;
+    text-decoration: none;
+    background-color: #806442;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow-link:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    cursor: pointer;
+}

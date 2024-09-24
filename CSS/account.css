@@ -1,0 +1,177 @@
+.container {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rounded-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.labels {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.input-field,
+.form-control-username,
+.form-control-email,
+.form-control-mobile,
+.form-control-address,
+.form-control-postcode,
+.form-control-state,
+.form-control-area {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.input-field::placeholder,
+.form-control-username::placeholder,
+.form-control-email::placeholder,
+.form-control-mobile::placeholder,
+.form-control-address::placeholder,
+.form-control-postcode::placeholder,
+.form-control-state::placeholder,
+.form-control-area::placeholder {
+  font-size: 15px;
+  color: #777;
+}
+
+input[type="button"],
+button[type="submit"] {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #f3bc77;
+  color: #fff8f8;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+input[type="button"]:hover,
+button[type="submit"]:hover {
+  background-color: #000000;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.arrow-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  color: #fff;
+  text-decoration: none;
+  background-color: #806442;
+  padding: 8px 16px; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow-link:hover {
+  background-color: #000000;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.delete-btn {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #f44;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  background-color: #c00;
+  transform: translateY(-2px) scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .rounded-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .input-field,
+  .form-control-username,
+  .form-control-email,
+  .form-control-mobile,
+  .form-control-address,
+  .form-control-postcode,
+  .form-control-state,
+  .form-control-area {
+    font-size: 30px;
+  }
+
+  .input-field::placeholder,
+.form-control-username::placeholder,
+.form-control-email::placeholder,
+.form-control-mobile::placeholder,
+.form-control-address::placeholder,
+.form-control-postcode::placeholder,
+.form-control-state::placeholder,
+.form-control-area::placeholder {
+  font-size: 25px;
+}
+
+  input[type="button"],
+  button[type="submit"],
+  .delete-btn {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+
+  .arrow-link {
+    font-size: 25px;
+    padding: 8px 12px;
+  }
+}
